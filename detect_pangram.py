@@ -6,6 +6,7 @@ def pangram(p):
     if len(p) == 0:
         return []
     elif (len(p) % 2) != (2 % 2):
+        # This part is not yet done
         return p
     else:
         return [p[i:i+2] for i in range(0, len(p), 2)]
