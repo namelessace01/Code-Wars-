@@ -4,10 +4,9 @@
 
 def sum_two_smallest_numbers(numbers):
     numbers = sorted(numbers)
-    return sum(numbers[0:2])
+    return sum(numbers[:2])
 
 
 print(sum_two_smallest_numbers([5, 8, 12, 18, 22]), 13)
 print(sum_two_smallest_numbers([7, 15, 12, 18, 22]), 19)
 print(sum_two_smallest_numbers([25, 42, 12, 18, 22]), 30)
-
