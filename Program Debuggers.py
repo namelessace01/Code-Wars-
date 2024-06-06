@@ -1,7 +1,5 @@
-def solution(text, ending):
-    # your code here...
-    return True if text[-2:] == ending[-2:] else False
-    pass
+def solution(text, end):
+    return True if text[-len(end):] == end else False
 
 
 print(solution('ails', 'fails'))
