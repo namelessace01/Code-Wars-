@@ -1,17 +1,19 @@
-# Complete the solution so that it splits the string into pairs of two characters.
-# If the string contains an odd number of characters then it should replace the 
-# missing second character of the final pair with an underscore ('_').
+# Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
 
-def pangram(p):
-    if len(p) == 0:
-        return []
-    elif (len(p) % 2) != (2 % 2):
-        # This part is not yet done
-        return p
-    else:
-        return [p[i:i+2] for i in range(0, len(p), 2)]
-    
-
-print(pangram("abcdefg"))
+def solution(text, end):
+    return True if text[-len(end):] == end else False
 
 
+# Test Examples for the function
+solution("samurai", "ai")
+solution("ninja", "ja")
+solution("sensei", "i")
+solution ("abc", "abc")
+solution("abcabc", "bc")
+solution("fails", "ails")
+solution("sumo", "omo")
+solution("samurai", "ra")
+solution("abc", "abcd")
+solution("ails", "fails")
+solution("this", "fails")
+solution("spam", "eggs")
