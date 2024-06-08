@@ -15,3 +15,10 @@ def friend(x):
 print(friend(["Ryan", "Kieran", "Mark",]), ["Ryan", "Mark"])
 print(friend(["Ryan", "Jimmy", "abc", "d", "Cool Man"]), ["Ryan"])
 print(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"]), ["Jimm", "Cari", "aret"])
+
+# OR
+
+def friends(x):
+    return [output for output in x if len(x) == 4]
+    # Although it's not so effective as the first one
+    # It all balls down to personal ideals eventually
