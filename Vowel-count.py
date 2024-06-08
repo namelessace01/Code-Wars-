@@ -10,3 +10,10 @@ def get_count(sentence):
             count += 1
     
     return count 
+
+
+print(get_count("aeiou"))
+print(get_count("y"))
+print(get_count("bcdfghjklmnpqrstvwxz y"))
+print(get_count(""))
+print(get_count("abracadabra"))
