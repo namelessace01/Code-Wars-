@@ -15,3 +15,8 @@ def solution(number):
 
 print(solution(10))
 print(solution(4))
+print(solution(6))
+print(solution(16))
+print(solution(3))
+print(solution(5))
+  
