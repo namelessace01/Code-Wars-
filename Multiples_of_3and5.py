@@ -5,13 +5,18 @@
 # Note: If the number is a multiple of both 3 and 5, only count it once.
 
 def solution(number):
-    count = []
-    for i in range(1, number):
-        if i % 3 == 0 or i % 5 == 0:
-            count.append(i)
-            counts = sum(count)
-    return counts
-
+    num = []
+    if number > 0:
+        for i in range(1, number + 11):
+            if i % 3 == 0:
+                num.append(i)
+            elif i % 5 == 0:
+                num.append(i)
+            
+        return sum(num)
+    
+    else:
+        return 0
 
 print(solution(10))
 print(solution(4))
