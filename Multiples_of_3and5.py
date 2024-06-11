@@ -18,6 +18,8 @@ def solution(number):
     else:
         return 0
 
+
+# Practical Questions to test the code.
 print(solution(10))
 print(solution(4))
 print(solution(6))
