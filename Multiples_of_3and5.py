@@ -16,7 +16,7 @@ def solution(number):
         return sum(num)
     
     else:
-        return 0
+        return 
 
 
 # Practical Questions to test the code.
